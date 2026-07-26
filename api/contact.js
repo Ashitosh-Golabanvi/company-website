@@ -5,7 +5,7 @@
  * This prevents the Web3Forms Access Key from being exposed to the client browser.
  */
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // 1. Enforce POST requests only
   if (req.method !== 'POST') {
     res.setHeader('Allow', ['POST']);
@@ -16,7 +16,9 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { name, email, company, phone, projectType, budget, timeline, message } = req.body || {};
+    // Defensive parsing: parse body if it is passed as a string
+    const body = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
+    const { name, email, company, phone, projectType, budget, timeline, message } = body;
 
     // 2. Trim whitespace and sanitize inputs
     const cleanName = (name || '').trim();
