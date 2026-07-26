@@ -60,7 +60,7 @@ export class ContactService {
   private async sendWithWeb3Forms(inquiry: ContactInquiry): Promise<void> {
     const payload = {
       access_key: environment.web3Forms.accessKey,
-      subject: `🚨 [CLIENT REQUIREMENT] ${inquiry.projectType} - ${inquiry.name}`,
+      subject: `*** [CLIENT REQUIREMENT] *** ${inquiry.projectType} - ${inquiry.name}`,
       from_name: 'Client Requirement Alert',
       replyto: inquiry.email, // Automatically set user's email as reply recipient
       'Client Name': inquiry.name,
