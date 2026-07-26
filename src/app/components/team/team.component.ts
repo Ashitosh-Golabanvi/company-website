@@ -41,9 +41,9 @@ export class TeamComponent {
   founders: FounderData[] = [
     {
       id: 'founder1',
-      name: 'Alex Mercer',
+      name: 'Ashitosh G',
       role: 'Founder | Software Engineer',
-      initials: 'AM',
+      initials: 'AG',
       introduction:
         'I work directly with clients to understand requirements, design scalable solutions, and build high-quality software that solves real business problems.',
       expertise: [
@@ -54,10 +54,10 @@ export class TeamComponent {
         'Cloud Deployment',
         'Technical Consultation',
       ],
-      email: 'alex.mercer@corecraft.dev',
-      phone: '+1 (555) 0142',
-      linkedin: 'https://linkedin.com/in/alex-mercer-placeholder',
-      github: 'https://github.com/alex-mercer-placeholder',
+      email: 'ashitoshgv.09@gmail.com',
+      phone: '9341697715',
+      linkedin: 'https://www.linkedin.com/in/ashitosh-golabanvi',
+      github: 'https://github.com/Ashitosh-Golabanvi',
     },
     {
       id: 'founder2',

@@ -26,7 +26,7 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
           <!-- Social Icons -->
           <div class="flex items-center gap-4">
             <a
-              href="https://linkedin.com/company/placeholder"
+              href="https://www.linkedin.com/in/ashitosh-golabanvi"
               target="_blank"
               rel="noopener noreferrer"
               class="hover:text-white transition-colors"
@@ -35,7 +35,7 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
               <app-icon name="linkedin" [size]="20" />
             </a>
             <a
-              href="https://github.com/placeholder"
+              href="https://github.com/Ashitosh-Golabanvi"
               target="_blank"
               rel="noopener noreferrer"
               class="hover:text-white transition-colors"
@@ -88,14 +88,14 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
           <ul class="space-y-4 text-sm">
             <li class="flex items-start gap-3">
               <app-icon name="mail" [size]="18" class="shrink-0 mt-0.5 text-primary" />
-              <a href="mailto:hello@corecraft.dev" class="hover:text-white transition-colors break-all">
-                hello@corecraft.dev
+              <a href="mailto:ashitoshgv.09@gmail.com" class="hover:text-white transition-colors break-all">
+                ashitoshgv.09@gmail.com
               </a>
             </li>
             <li class="flex items-start gap-3">
               <app-icon name="phone" [size]="18" class="shrink-0 mt-0.5 text-primary" />
-              <a href="tel:+15550199" class="hover:text-white transition-colors">
-                +1 (555) 0199
+              <a href="tel:9341697715" class="hover:text-white transition-colors">
+                9341697715
               </a>
             </li>
             <li class="flex items-start gap-3">
