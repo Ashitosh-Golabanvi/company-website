@@ -55,26 +55,40 @@ export class ContactService {
   }
 
   /**
-   * Submits inquiry securely using the local serverless endpoint proxy.
+   * Submits inquiry using Web3Forms endpoint directly.
    */
   private async sendWithWeb3Forms(inquiry: ContactInquiry): Promise<void> {
-    const response = await fetch('/api/contact', {
+    const payload = {
+      access_key: environment.web3Forms.accessKey,
+      subject: `🚨 [CLIENT REQUIREMENT] ${inquiry.projectType} - ${inquiry.name}`,
+      from_name: 'Client Requirement Alert',
+      replyto: inquiry.email, // Automatically set user's email as reply recipient
+      'Client Name': inquiry.name,
+      'Client Email': inquiry.email,
+      'Company Name': inquiry.company || 'Not Provided',
+      'Phone Number': inquiry.phone || 'Not Provided',
+      'Project Type': inquiry.projectType,
+      'Estimated Budget': inquiry.budget || 'Not Provided',
+      'Desired Timeline': inquiry.timeline || 'Not Provided',
+      'Requirements Details': inquiry.message,
+    };
+
+    const response = await fetch(environment.web3Forms.endpoint, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
-      body: JSON.stringify(inquiry),
+      body: JSON.stringify(payload),
     });
 
-    const result = await response.json().catch(() => ({}));
-
     if (!response.ok) {
-      throw new Error(result.message || `API error: ${response.status}`);
+      throw new Error(`Web3Forms HTTP error: ${response.status}`);
     }
 
+    const result = await response.json();
     if (!result.success) {
-      throw new Error(result.message || 'API submission failed');
+      throw new Error(result.message || 'Web3Forms API submission failed');
     }
   }
 
