@@ -74,7 +74,7 @@ export class TeamComponent {
         'Project Planning',
         'Software Delivery',
       ],
-      email: 'sarah.chen@corecraft.dev',
+      email: 'ashitoshglv09@gmail.com',
       phone: '+1 (555) 0187',
       linkedin: 'https://linkedin.com/in/sarah-chen-placeholder',
       github: 'https://github.com/sarah-chen-placeholder',
