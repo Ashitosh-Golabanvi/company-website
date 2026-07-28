@@ -21,7 +21,7 @@ export interface FounderData {
   standalone: true,
   imports: [CommonModule, IconComponent, ButtonComponent],
   template: `
-    <div class="bg-white border border-border-base rounded-2xl p-6 sm:p-8 shadow-xs hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full">
+    <div class="bg-bg-card border border-border-base rounded-2xl p-6 sm:p-8 shadow-xs hover:shadow-md transition-shadow duration-300 flex flex-col justify-between h-full">
       <div class="space-y-6">
         <!-- Circular Profile Image Placeholder with Gradient -->
         <div class="flex items-center gap-4">
@@ -44,7 +44,7 @@ export interface FounderData {
           <h4 class="text-xs font-bold text-heading uppercase tracking-wider">Expertise</h4>
           <div class="flex flex-wrap gap-2">
             @for (exp of data().expertise; track exp) {
-              <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-bg-base border border-border-base text-slate-700">
+              <span class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium bg-bg-base border border-border-base text-paragraph">
                 {{ exp }}
               </span>
             }

@@ -29,7 +29,7 @@ interface ChoiceCard {
         <!-- Benefits Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           @for (benefit of benefits; track benefit.title) {
-            <div class="bg-white border border-border-base rounded-xl p-6 sm:p-8 hover:shadow-md transition-shadow duration-200 space-y-4">
+            <div class="bg-bg-card border border-border-base rounded-xl p-6 sm:p-8 hover:shadow-md transition-shadow duration-200 space-y-4">
               <!-- Checkmark icon wrapper -->
               <div class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center">
                 <app-icon name="check" [size]="16" [strokeWidth]="3" />

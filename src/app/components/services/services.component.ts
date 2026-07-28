@@ -30,7 +30,7 @@ interface ServiceItem {
         <!-- Services Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
           @for (item of services; track item.title) {
-            <div class="bg-white border border-border-base rounded-xl p-6 sm:p-8 hover:shadow-lg hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group">
+            <div class="bg-bg-card border border-border-base rounded-xl p-6 sm:p-8 hover:shadow-lg hover:border-primary transition-all duration-300 flex flex-col justify-between group">
               <div>
                 <!-- Icon container -->
                 <div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">

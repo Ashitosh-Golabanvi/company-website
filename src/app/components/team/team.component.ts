@@ -7,7 +7,7 @@ import { FounderCardComponent, FounderData } from '../founder-card/founder-card.
   standalone: true,
   imports: [CommonModule, FounderCardComponent],
   template: `
-    <section id="contact" class="bg-white border-t border-border-base py-20 sm:py-28">
+    <section id="contact" class="bg-bg-card border-t border-border-base py-20 sm:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Header -->
