@@ -14,7 +14,7 @@ interface ProcessStep {
   standalone: true,
   imports: [CommonModule, IconComponent],
   template: `
-    <section id="process" class="bg-white border-y border-border-base py-20 sm:py-28">
+    <section id="process" class="bg-bg-card border-y border-border-base py-20 sm:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <!-- Section Header -->

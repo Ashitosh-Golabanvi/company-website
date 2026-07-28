@@ -10,7 +10,7 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
   template: `
     <section id="home" class="relative overflow-hidden bg-bg-base pt-24 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32">
       <!-- Minimal Radial Gradient Background Dot pattern -->
-      <div class="absolute inset-0 -z-10 bg-[radial-gradient(#E2E8F0_1px,transparent_1px)] [background-size:32px_32px] opacity-70"></div>
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(rgba(255,255,255,0.07)_1px,transparent_1px)] [background-size:32px_32px] opacity-70"></div>
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">

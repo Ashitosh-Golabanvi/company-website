@@ -13,7 +13,7 @@ import { IconComponent } from '../../shared/components/icon/icon.component';
   template: `
     <div
       id="contact"
-      class="bg-white border border-border-base rounded-2xl p-6 sm:p-10 shadow-xs max-w-3xl mx-auto"
+      class="bg-bg-card border border-border-base rounded-2xl p-6 sm:p-10 shadow-xs max-w-3xl mx-auto"
     >
       @if (status() === 'SUCCESS') {
         <!-- Success State Overlay -->
@@ -247,7 +247,7 @@ export class ContactFormComponent {
   }
 
   inputClasses(field: string): string {
-    const base = 'w-full px-4 py-2.5 rounded-lg border text-sm text-heading placeholder:text-slate-400 bg-white transition-all duration-200 focus:outline-none focus:ring-2 focus:border-transparent';
+    const base = 'w-full px-4 py-2.5 rounded-lg border text-sm text-heading placeholder:text-slate-400 bg-bg-base transition-all duration-200 focus:outline-none focus:ring-2 focus:border-transparent';
     const isInvalid = this.isFieldInvalid(field);
     return isInvalid
       ? `${base} border-red-300 focus:ring-red-500/20 focus:border-red-500`

@@ -62,7 +62,7 @@ interface NavItem {
 
       <!-- Mobile Navigation Drawer -->
       <div [class]="mobileDrawerClasses()">
-        <div class="px-4 pt-4 pb-8 space-y-4 border-t border-border-base bg-white shadow-xl">
+        <div class="px-4 pt-4 pb-8 space-y-4 border-t border-border-base bg-bg-card shadow-xl">
           @for (item of navItems; track item.anchor) {
             <a
               [href]="'#' + item.anchor"
@@ -155,7 +155,7 @@ export class HeaderComponent {
   }
 
   headerClasses(): string {
-    return `sticky top-0 z-50 bg-white transition-all duration-300 ${
+    return `sticky top-0 z-50 bg-bg-card/85 backdrop-blur-md transition-all duration-300 ${
       this.isScrolled() ? 'border-b border-border-base shadow-sm py-0' : 'border-b border-transparent py-1 sm:py-2'
     }`;
   }

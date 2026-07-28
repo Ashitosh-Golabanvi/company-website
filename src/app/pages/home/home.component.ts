@@ -47,7 +47,7 @@ import { FounderData } from '../../components/founder-card/founder-card.componen
       <app-team (onScheduleCall)="handleScheduleCall($event)" />
 
       <!-- Contact Form Wrapper -->
-      <div class="bg-white pb-20 sm:pb-28">
+      <div class="bg-bg-base pb-20 sm:pb-28">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <app-contact-form />
         </div>
